@@ -164,6 +164,13 @@ void MainWindow::on_pushButton_clicked()
 
 }
 
+        foo = (Gas_Mass)/(3*M_PI);
+        Tank_Radius=100*round(pow(foo,1/3));
+        Tank_CTR = round(Tank_Radius*1.5);
+        Body_lenght=round(500*pow(Construct_Mass,1/3));
+        SP_Square =0.5* Engines_Power/(1.3*0.29*0.866);
+        Payload_R=round(sqrt(Payload_Mass/(0.02*1.5*M_PI)));
+        EnginesCount=round(Engines_Thrust);
         ui->lineEdit_3->setText(QString::number(EFFICIENCY));
         ui->lineEdit_8->setText(QString::number(Gas_Flow_Speed));
         ui->lineEdit_18->setText(QString::number(Electro_Mass));
@@ -176,6 +183,10 @@ void MainWindow::on_pushButton_clicked()
         ui->lineEdit_15->setText(QString::number(Gas_Mass));
         ui->lineEdit_14->setText(QString::number(Delta_velocity/1000));
         ui->lineEdit_13->setText(QString::number(Initial_Speed/1000));
+
+
+
+
 
         RK_STEPS =Fly_Time/100;
         INITIAL_ACCELERATION = Engines_Thrust/Start_SC_Mass;

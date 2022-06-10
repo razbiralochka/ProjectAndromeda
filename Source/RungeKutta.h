@@ -110,10 +110,7 @@ void Runge_Kutta(QVector<double> * LOCAL_TIME, QVector<double> * LOCAL_RADIUS, Q
         ANGLE_U   +=   (k[2][0]+2.0*k[2][1]+2.0*k[2][2]+k[2][3])/6.0;
 
         VELOCITY  +=   (k[3][0]+2.0*k[3][1]+2.0*k[3][2]+k[3][3])/6.0;
-
-
     }
-
 
 }
 

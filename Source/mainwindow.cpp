@@ -2,6 +2,7 @@
 #include "RungeKutta.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Modeling.h"
 #include <QMessageBox>
 #include <math.h>
 
@@ -19,7 +20,7 @@ MainWindow::MainWindow(QWidget *parent)
     if(!db.open())
     {
 
-        QMessageBox::critical(this, "DataBase fatal error!", db.lastError().text());
+        QMessageBox::critical(this, "Ошибка открытия Базы Данных", db.lastError().text());
 
     }
 
@@ -190,7 +191,7 @@ void MainWindow::on_pushButton_clicked()
 
 
 
-       qDebug() << INCLINATION;
+
        Runge_Kutta(&TIME_ARRAY,&RADIUS_ARRAY,&INCLINATION_ARRAY);
 
         ui->widget->xAxis->setRange(0,Fly_Time/86000);
@@ -206,11 +207,15 @@ void MainWindow::on_pushButton_clicked()
         ui->widget_4->graph(0)->addData(TIME_ARRAY,RADIUS_ARRAY);
         ui->widget_4->replot();
 
+        RADIUS_ARRAY.clear();
+        INCLINATION_ARRAY.clear();
+        TIME_ARRAY.clear();
 
+        ui->label_31->setText("Зависимость наклонения орбиты (град) от времени (сут). Конечное наклонение: " + QString::number(180*INCLINATION/M_PI) + " град");
+        ui->label_32->setText("Зависимость радиуса орбиты (км) от времени (сут). Конечный радиус: " + QString::number(RADIUS/1000)+ " км");
 
-         qDebug() << INCLINATION;
-
-
+        ExcelExport();
+        QMessageBox::about(this, "Excel Export", "Данные занесены в таблицу data.csv");
 }
 
 

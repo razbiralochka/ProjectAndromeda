@@ -15,6 +15,7 @@ SOURCES += \
 
 HEADERS += \
     Initialize.h \
+    Modeling.h \
     RungeKutta.h \
     mainwindow.h \
     qcustomplot.h

@@ -16,7 +16,9 @@
   <property name="styleSheet">
    <string notr="true">QMainWindow{
 background-color: rgb(20, 20, 20);
-color: turquoise;
+color: turquoise; 
+
+
 
 }
 QLineEdit
@@ -190,7 +192,7 @@ selection-background-color:  turquoise;
      <item row="7" column="3">
       <widget class="QLineEdit" name="lineEdit_3">
        <property name="text">
-        <string>0.6</string>
+        <string>60</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -431,9 +433,9 @@ selection-background-color:  turquoise;
       <widget class="QLabel" name="label_28">
        <property name="styleSheet">
         <string notr="true">border-radius: 10px;
-border: 1px solid turquoise;
+border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(31, 31, 31);</string>
+background-color: rgb(31, 31, 31); </string>
        </property>
        <property name="text">
         <string>Орбита</string>
@@ -449,7 +451,7 @@ background-color: rgb(31, 31, 31);</string>
         <string notr="true">border-radius: 10px;
 border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(31, 31, 31);</string>
+background-color: rgb(31, 31, 31); </string>
        </property>
        <property name="text">
         <string>Результаты вычислении:</string>
@@ -466,9 +468,9 @@ background-color: rgb(31, 31, 31);</string>
        </property>
        <property name="styleSheet">
         <string notr="true">border-radius: 10px;
-border: 1px solid turquoise;
+border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(31, 31, 31);</string>
+background-color: rgb(31, 31, 31); </string>
        </property>
        <property name="text">
         <string>ДУ и ЭУ</string>
@@ -518,7 +520,7 @@ background-color: rgb(31, 31, 31);</string>
         <string notr="true">border-radius: 10px;
 border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(31, 31, 31);</string>
+background-color: rgb(31, 31, 31); </string>
        </property>
        <property name="text">
         <string>Начальные параметры:</string>
@@ -638,10 +640,10 @@ background-color: rgb(31, 31, 31);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-radius: 10px;
-border: 1px solid turquoise;
+     <string notr="true">/*border-radius: 10px;
+border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(31, 31, 31);</string>
+background-color: rgb(31, 31, 31); */</string>
     </property>
     <property name="text">
      <string/>
@@ -743,7 +745,8 @@ background-color: rgb(31, 31, 31);</string>
      <string notr="true">border-radius: 10px;
 border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(20, 20, 20);</string>
+background-color: rgb(20, 20, 20);
+</string>
     </property>
     <widget class="QCustomPlot" name="widget" native="true">
      <property name="geometry">
@@ -769,7 +772,8 @@ background-color: rgb(20, 20, 20);</string>
      <string notr="true">border-radius: 10px;
 border: 2px solid turquoise;
 color: turquoise;
-background-color: rgb(20, 20, 20);</string>
+background-color: rgb(20, 20, 20);
+</string>
     </property>
     <widget class="QCustomPlot" name="widget_4" native="true">
      <property name="geometry">

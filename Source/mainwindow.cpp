@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    ui->widget->setBackground(QColor(20, 20, 20));
+   ui->widget->setBackground(QColor(20, 20, 20));
     ui->widget->xAxis->setBasePen(QPen(QColor(64,224,208), 1));
     ui->widget->yAxis->setBasePen(QPen(QColor(64,224,208), 1));
     ui->widget->xAxis->setTickLabelColor(QColor(64,224,208));
@@ -89,7 +89,7 @@ void MainWindow::on_pushButton_clicked()
         Engine_Specific_Mass=ui->lineEdit_9->text().toDouble();
         Electro_Specific_Mass=ui->lineEdit_10->text().toDouble();
         EFFICIENCY=ui->lineEdit_3->text().toDouble();
-
+        EFFICIENCY*=0.01;
 
 
 

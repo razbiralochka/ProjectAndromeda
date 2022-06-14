@@ -630,28 +630,6 @@ background-color: rgb(31, 31, 31); </string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_27">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>710</y>
-      <width>681</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">/*border-radius: 10px;
-border: 2px solid turquoise;
-color: turquoise;
-background-color: rgb(31, 31, 31); */</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_26">
     <property name="geometry">
      <rect>
@@ -662,7 +640,7 @@ background-color: rgb(31, 31, 31); */</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(31, 31, 31);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Выбран двигатель</string>
@@ -806,7 +784,6 @@ background-color: rgb(20, 20, 20);
    <zorder>gridLayoutWidget</zorder>
    <zorder>tableView</zorder>
    <zorder>groupBox</zorder>
-   <zorder>label_27</zorder>
    <zorder>label_26</zorder>
    <zorder>lineEdit_23</zorder>
    <zorder>pushButton</zorder>
